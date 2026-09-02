@@ -1,84 +1,172 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Indian Food</title>
+
+    <style>
+        * {
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        h1 {
+            font-style: italic;
+            font-size: 40px;
+            text-align: center;
+        }
+
+        header p {
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav ul {
+            width: 70%;
+            margin: auto;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav li {
+            list-style-type: none;
+            display: inline;
+            margin: 15px;
+        }
+
+        nav a {
+            text-transform: uppercase;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            color: black;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            width: 80%;
+            margin: 30px auto;
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 15px;
+        }
+
+        section h2 {
+            text-align: center;
+        }
+
+        section img {
+            width: 300px;
+            display: block;
+            margin: 20px auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
 </head>
+
 <body>
-<header>
-    <h1>Indian Food</h1>
-    <p>
-        The traditional food of India has been widely appreciated for its
-        fabulous use of herbs and spices. Indian cuisine is known for its
-        large assortment of dishes. The cooking style varies from region
-        to region and is largely divided into South Indian and North Indian
-        cuisine.
-    </p>
-    <ul>
-        <li>Bengali Food</li>
-        <li>Gujarati Food</li>
-        <li>Mughlai Food</li>
-        <li>Punjabi Food</li>
-        <li>South Indian Cuisine</li>
-    </ul>
-</header>
-<main>
-<section>
-    <h2>Bengali Food</h2>
-    <img src="bengali.jpg" width="250">
-    <p>
-        Bengali cuisine is appreciated for its fabulous use of panchphoron,
-        a term used to refer to the five essential spices, namely mustard,
-        fenugreek seed, cumin seed, ajwain, and black cumin seed.
-        The specialty of Bengali food lies in the perfect blend of sweet
-        and spicy flavors.
-    </p>
-</section>
-<section>
-    <h2>Gujarati Food</h2>
-    <img src="gujarati.jpg" width="250">
-    <p>
-        The traditional Gujarati food is primarily vegetarian and has a
-        high nutritional value. The typical Gujarati thali consists of
-        varied kinds of lip-smacking dishes. Gujarati cuisine has so much
-        to offer and each dish has an absolutely different cooking style.
-    </p>
-</section>
-<section>
-    <h2>Mughlai Food</h2>
-    <img src="mughlai.jpg" width="250">
-    <p>
-        Mughlai cuisine is one of the most popular cuisines, whose origin
-        can be traced back to the times of the Mughal Empire. Mughlai cuisine
-        consists of the dishes that were prepared in the kitchens of the
-        royal Mughal Emperors. Indian cuisine is predominantly influenced
-        by the cooking style practiced during the Mughal era.
-    </p>
-</section>
-<section>
-    <h2>Punjabi Food</h2>
-    <img src="punjabi.jpg" width="250">
-    <p>
-        The cuisine of Punjab has an enormous variety of meat-consuming
-        vegetables as well as vegetarian dishes. The spice content ranges
-        from minimal to pleasant to high. Punjabi food is usually relished
-        by people of all communities. In Punjab, home cooking differs from
-        the restaurant cooking style.
-    </p>
-</section>
-<section>
-    <h2>South Indian Cuisine</h2>
-    <img src="south-indian.jpg" width="250">
-    <p>
-        The cuisine of South India is known for its light, low calorie
-        appetizing dishes. The traditional food of South India is mainly
-        rice based. The cuisine is famous for its wonderful mixing of rice
-        and lentils to prepare yummy lip-smacking dishes.
-    </p>
-</section>
-</main>
-<footer>
-    <p>Author Name</p>
-    <p>Date: 24/04/2021</p>
-</footer>
+
+    <header>
+        <h1>Indian Food</h1>
+
+        <p>
+            Indian cuisine is known for its rich flavors, spices and variety.
+            Different regions of India have their own unique and delicious cuisines.
+        </p>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Bengali</a></li>
+                <li><a href="#">Gujarati</a></li>
+                <li><a href="#">Mughlai</a></li>
+                <li><a href="#">Punjabi</a></li>
+                <li><a href="#">South Indian</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Bengali Food</h2>
+
+            <img src="bengali.jpg" alt="Bengali Food">
+
+            <p>
+                Bengali cuisine is famous for its fish dishes, rice,
+                sweets and flavorful spices.
+            </p>
+        </section>
+
+        <section>
+            <h2>Gujarati Food</h2>
+
+            <img src="gujarati.jpg" alt="Gujarati Food">
+
+            <p>
+                Gujarati cuisine is known for dishes such as dhokla,
+                thepla and a variety of sweet and savory foods.
+            </p>
+        </section>
+
+        <section>
+            <h2>Mughlai Food</h2>
+
+            <img src="mughlai.jpg" alt="Mughlai Food">
+
+            <p>
+                Mughlai cuisine is rich and flavorful, with dishes
+                such as biryani, kebabs and creamy curries.
+            </p>
+        </section>
+
+        <section>
+            <h2>Punjabi Food</h2>
+
+            <img src="punjabi.jpg" alt="Punjabi Food">
+
+            <p>
+                Punjabi cuisine is popular for foods such as naan,
+                butter chicken, chole and other hearty dishes.
+            </p>
+        </section>
+
+        <section>
+            <h2>South Indian Cuisine</h2>
+
+            <img src="south-indian.jpg" alt="South Indian Food">
+
+            <p>
+                South Indian cuisine includes delicious dishes such as
+                dosa, idli, vada and sambar.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Created by Ayaan</p>
+        <p>2026</p>
+    </footer>
+
 </body>
+
 </html>
