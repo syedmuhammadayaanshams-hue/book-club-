@@ -5,18 +5,58 @@
      <title>Mount Caramel Book Club</title>
      <link rel="stylesheet" href="style.css" type="text/css">
 <style>
+
+   div {position: relative;
+        width: 100px;
+      padding: 20px;
+     background-colour: #999999;
+     colour:white
+    border: 5px blue solid
+
+     }
+
+    .div1 {
+       z-index: 1; 
+    }
+       
+    .div2 {
+       z-index: 2;
+       top: -25px;
+       left: 75px;
+}
+
+    .div3 {
+       z-index: 3;
+       top: -50px;
+    }
+
+    .div4 {
+       z-index: 4;
+       top: -75px;
+       left: 50px;
+
+    }
+
     body {
     background-color: #eeeeee;
     }
     
     header {
     background-color: brown;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     }
     
     nav {
     background-color: aquamarine;
-    }
-    
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+
+}
     #intro {
     background-color: lightpink;
     font-family: Arial, helvetica, sans-serif;
@@ -89,8 +129,11 @@
     margin: 10px;
     width: 400px;
     box-shadow: 6px 0px 21px -3px #333333;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+}
     button { 
         background-colour: red;
         colour: white;
@@ -99,13 +142,17 @@
      padding: 5px;
      border-radius: 5px;
      border: none;
+     position: fixed;
+     right: 50px;
+     bottom: 40px;
 
+    }
      ul {
        list list-style-type:none;
      }
   li a { 
     text-decoration: none;
-    colour: #333333;
+    color: #333333;
     font-size: 20px;
    font-weight: 600;
   }
@@ -151,14 +198,38 @@ td {
 
 footer {
     padding: 20px;
-}
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 
+}
 #bestsellers h2 {
     padding: 20px;
 }
 
  ol li {
     margin-bottom: 20px;
+    #book-reviews p,
+    #book-reviews h3
+    position: relative;
+    left: 40%;
+    width: 400px;
+ }
+
+#videos div {
+    display: flex;
+    justify-content: space-around;
+ }
+
+#teachers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
  }
 
 </style>
