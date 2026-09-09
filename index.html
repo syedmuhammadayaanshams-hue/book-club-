@@ -1,282 +1,77 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>Indian Cuisines</title>
+    <title>My Hobby Cards</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1">
+
+
+    <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
     <style>
-        * {
-            font-family: Arial, sans-serif;
-            box-sizing: border-box;
-        }
-
         body {
-            margin: 0;
+            background-color: f9f9f9;
+            font-family: Arial, Sans-serif;
+            padding: 30px 15px;
         }
+       h1 {
+        text-align: center;
+        color: FF5A43;
+       }
+       .hobby-card {
+        text-align: center;
+        border: 2px solid #FF5A43;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 20px;
+        background-color: fff8e1;
+       }
+       .hobby-card h3 {
+        color: #FF5A43;
+       }
+       </style>
+       </head>
+       <body>
 
-        .container {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 10px;
-            width: 90%;
-            margin: auto;
-        }
+      <h1>My Hobby Cards</h1>
 
-        header {
-            grid-column: 1 / 6;
-            text-align: center;
-            padding: 20px;
-        }
 
-        h1 {
-            font-style: italic;
-            font-size: 40px;
-            text-align: center;
-        }
+      <div class="container">
 
-        header p {
-            padding: 10px;
-            margin: 10px;
-        }
 
-        nav {
-            grid-column: 1 / 6;
-            padding: 10px;
-        }
+        <div class="row">
 
-        nav ul {
-            width: 70%;
-            margin: auto;
-            padding: 15px;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
 
-        nav li {
-            list-style-type: none;
-        }
 
-        nav a {
-            text-transform: uppercase;
-            font-size: 16px;
-            font-weight: bold;
-            text-decoration: none;
-            color: black;
-        }
 
-        main {
-            grid-column: 1 / 5;
-            padding: 10px;
-        }
-
-        section {
-            width: 90%;
-            margin: 20px auto;
-            padding: 10px;
-        }
-
-        section h2 {
-            text-align: center;
-            background-color: #ffff99;
-            padding: 5px;
-        }
-
-        section div {
-            width: 80%;
-            margin: auto;
-            padding: 15px;
-            background-color: #f9eafa;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
-
-        section img {
-            width: 180px;
-            height: 120px;
-            object-fit: cover;
-        }
-
-        section p {
-            width: 50%;
-            font-size: 14px;
-        }
-
-        aside {
-            grid-column: 5 / 6;
-            padding: 20px;
-            background-color: #f9eafa;
-        }
-
-        aside h2 {
-            text-align: center;
-        }
-
-        aside h3 {
-            text-align: center;
-        }
-
-        aside ul {
-            padding-left: 25px;
-        }
-
-        footer {
-            grid-column: 1 / 6;
-            background-color: #202236;
-            color: white;
-            padding: 25px;
-            margin-top: 20px;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
-    </style>
-</head>
-
-<body>
-
-    <div class="container">
-
-        <header>
-            <h1>Indian Cuisines</h1>
-
-            <p>
-                The cuisine of India is diverse and varies according to
-                different regions and cultures. Indian food is famous for
-                its spices, flavors and variety.
-            </p>
-        </header>
-
-        <nav>
-            <ul>
-                <li><a href="#">Bengali</a></li>
-                <li><a href="#">Gujarati</a></li>
-                <li><a href="#">Mughlai</a></li>
-                <li><a href="#">Punjabi</a></li>
-                <li><a href="#">South Indian</a></li>
-            </ul>
-        </nav>
-
-        <main>
-
-            <section>
-                <h2>Bengali Food</h2>
-
-                <div>
-                    <img src="bengali.jpg" alt="Bengali Food">
-
-                    <p>
-                        Bengali cuisine is appreciated for its fabulous use
-                        of pungent spices, aromatic rice and a wide variety
-                        of fish. Bengali food is rich in flavor.
-                    </p>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="hobby-card">
+                    <h3>Drawing</h3>
+                    <p>I love sketching animals and comic characters.</p>
                 </div>
-            </section>
-
-            <section>
-                <h2>Gujarati Food</h2>
-
-                <div>
-                    <img src="gujarati.jpg" alt="Gujarati Food">
-
-                    <p>
-                        The traditional Gujarati food is primarily vegetarian
-                        and has a high nutritional value. Gujarati cuisine
-                        includes many delicious sweet and savory dishes.
-                    </p>
-                </div>
-            </section>
-
-            <section>
-                <h2>Mughlai Food</h2>
-
-                <div>
-                    <img src="mughlai.jpg" alt="Mughlai Food">
-
-                    <p>
-                        Mughlai cuisine is one of the most popular cuisines,
-                        whose origin can be traced back to the times of the
-                        Mughal Empire. Mughlai dishes are rich and flavorful.
-                    </p>
-                </div>
-            </section>
-
-            <section>
-                <h2>Punjabi Food</h2>
-
-                <div>
-                    <img src="punjabi.jpg" alt="Punjabi Food">
-
-                    <p>
-                        The cuisine of Punjab has an enormous variety of
-                        mouth-watering vegetarian as well as non-vegetarian
-                        dishes. Punjabi food is full of flavor.
-                    </p>
-                </div>
-            </section>
-
-            <section>
-                <h2>South Indian Cuisine</h2>
-
-                <div>
-                    <img src="south-indian.jpg" alt="South Indian Food">
-
-                    <p>
-                        The cuisine of South India is known for its light,
-                        low-calorie preparations. Dosa, idli, vada and
-                        sambar are popular South Indian dishes.
-                    </p>
-                </div>
-            </section>
-
-        </main>
-
-        <aside>
-
-            <h2>Popular Foods</h2>
-
-            <div>
-                <h3>North Indian</h3>
-
-                <ul>
-                    <li>Chole Bhature</li>
-                    <li>Samosa</li>
-                    <li>Jalebi</li>
-                    <li>Dahi Bhalla</li>
-                </ul>
             </div>
 
-            <div>
-                <h3>South Indian</h3>
-
-                <ul>
-                    <li>Dosa</li>
-                    <li>Idli</li>
-                    <li>Vada</li>
-                    <li>Sambar</li>
-                </ul>
-            </div>
-
-            <div>
-                <h3>Mughlai</h3>
-
-                <ul>
-                    <li>Chicken Biryani</li>
-                    <li>Butter Chicken</li>
-                    <li>Rogan Josh</li>
-                </ul>
-            </div>
-
-        </aside>
-
-        <footer>
-            <p>Published by: Author Name</p>
-            <p>Date: 25/04/2021</p>
-        </footer>
-
+    <div class="col-12 col-md-6 col-lg-4">
+        <div class="hobby-card">
+            <h3>Football</h3>
+            <p>I play Football every evening with my friends</p>
+        </div>
     </div>
 
-</body>
+    <div class="col-12 col-md-6 col-lg-4">
+        <div class="hobby-card">
+            <h3>Reading</h3>
+            <p>My Favourite books are adventure stories</p>
+        </div>
+    </div>
 
-</html>
+    </div>
+    </div>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+    </script>
+
+    </body>
+    </html>
