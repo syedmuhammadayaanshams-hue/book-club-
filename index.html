@@ -2,21 +2,30 @@
 <html>
 
 <head>
-    <title>Indian Food</title>
+    <title>Indian Cuisines</title>
 
     <style>
         * {
             font-family: Arial, sans-serif;
+            box-sizing: border-box;
         }
 
         body {
             margin: 0;
         }
 
+        .container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            width: 90%;
+            margin: auto;
+        }
+
         header {
+            grid-column: 1 / 6;
             text-align: center;
             padding: 20px;
-            margin: 10px;
         }
 
         h1 {
@@ -30,70 +39,117 @@
             margin: 10px;
         }
 
+        nav {
+            grid-column: 1 / 6;
+            padding: 10px;
+        }
+
         nav ul {
             width: 70%;
             margin: auto;
             padding: 15px;
-            text-align: center;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
         }
 
         nav li {
             list-style-type: none;
-            display: inline;
-            margin: 15px;
         }
 
         nav a {
             text-transform: uppercase;
-            font-size: 18px;
+            font-size: 16px;
             font-weight: bold;
             text-decoration: none;
             color: black;
         }
 
         main {
-            padding: 20px;
+            grid-column: 1 / 5;
+            padding: 10px;
         }
 
         section {
-            width: 80%;
-            margin: 30px auto;
-            padding: 20px;
-            border: 2px solid black;
-            border-radius: 15px;
+            width: 90%;
+            margin: 20px auto;
+            padding: 10px;
         }
 
         section h2 {
             text-align: center;
+            background-color: #ffff99;
+            padding: 5px;
+        }
+
+        section div {
+            width: 80%;
+            margin: auto;
+            padding: 15px;
+            background-color: #f9eafa;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
         }
 
         section img {
-            width: 300px;
-            display: block;
-            margin: 20px auto;
+            width: 180px;
+            height: 120px;
+            object-fit: cover;
+        }
+
+        section p {
+            width: 50%;
+            font-size: 14px;
+        }
+
+        aside {
+            grid-column: 5 / 6;
+            padding: 20px;
+            background-color: #f9eafa;
+        }
+
+        aside h2 {
+            text-align: center;
+        }
+
+        aside h3 {
+            text-align: center;
+        }
+
+        aside ul {
+            padding-left: 25px;
         }
 
         footer {
-            text-align: center;
-            padding: 20px;
-            margin-top: 30px;
+            grid-column: 1 / 6;
+            background-color: #202236;
+            color: white;
+            padding: 25px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
         }
     </style>
 </head>
 
 <body>
 
-    <header>
-        <h1>Indian Food</h1>
+    <div class="container">
 
-        <p>
-            Indian cuisine is known for its rich flavors, spices and variety.
-            Different regions of India have their own unique and delicious cuisines.
-        </p>
+        <header>
+            <h1>Indian Cuisines</h1>
+
+            <p>
+                The cuisine of India is diverse and varies according to
+                different regions and cultures. Indian food is famous for
+                its spices, flavors and variety.
+            </p>
+        </header>
 
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
                 <li><a href="#">Bengali</a></li>
                 <li><a href="#">Gujarati</a></li>
                 <li><a href="#">Mughlai</a></li>
@@ -101,71 +157,125 @@
                 <li><a href="#">South Indian</a></li>
             </ul>
         </nav>
-    </header>
 
-    <main>
+        <main>
 
-        <section>
-            <h2>Bengali Food</h2>
+            <section>
+                <h2>Bengali Food</h2>
 
-            <img src="bengali.jpg" alt="Bengali Food">
+                <div>
+                    <img src="bengali.jpg" alt="Bengali Food">
 
-            <p>
-                Bengali cuisine is famous for its fish dishes, rice,
-                sweets and flavorful spices.
-            </p>
-        </section>
+                    <p>
+                        Bengali cuisine is appreciated for its fabulous use
+                        of pungent spices, aromatic rice and a wide variety
+                        of fish. Bengali food is rich in flavor.
+                    </p>
+                </div>
+            </section>
 
-        <section>
-            <h2>Gujarati Food</h2>
+            <section>
+                <h2>Gujarati Food</h2>
 
-            <img src="gujarati.jpg" alt="Gujarati Food">
+                <div>
+                    <img src="gujarati.jpg" alt="Gujarati Food">
 
-            <p>
-                Gujarati cuisine is known for dishes such as dhokla,
-                thepla and a variety of sweet and savory foods.
-            </p>
-        </section>
+                    <p>
+                        The traditional Gujarati food is primarily vegetarian
+                        and has a high nutritional value. Gujarati cuisine
+                        includes many delicious sweet and savory dishes.
+                    </p>
+                </div>
+            </section>
 
-        <section>
-            <h2>Mughlai Food</h2>
+            <section>
+                <h2>Mughlai Food</h2>
 
-            <img src="mughlai.jpg" alt="Mughlai Food">
+                <div>
+                    <img src="mughlai.jpg" alt="Mughlai Food">
 
-            <p>
-                Mughlai cuisine is rich and flavorful, with dishes
-                such as biryani, kebabs and creamy curries.
-            </p>
-        </section>
+                    <p>
+                        Mughlai cuisine is one of the most popular cuisines,
+                        whose origin can be traced back to the times of the
+                        Mughal Empire. Mughlai dishes are rich and flavorful.
+                    </p>
+                </div>
+            </section>
 
-        <section>
-            <h2>Punjabi Food</h2>
+            <section>
+                <h2>Punjabi Food</h2>
 
-            <img src="punjabi.jpg" alt="Punjabi Food">
+                <div>
+                    <img src="punjabi.jpg" alt="Punjabi Food">
 
-            <p>
-                Punjabi cuisine is popular for foods such as naan,
-                butter chicken, chole and other hearty dishes.
-            </p>
-        </section>
+                    <p>
+                        The cuisine of Punjab has an enormous variety of
+                        mouth-watering vegetarian as well as non-vegetarian
+                        dishes. Punjabi food is full of flavor.
+                    </p>
+                </div>
+            </section>
 
-        <section>
-            <h2>South Indian Cuisine</h2>
+            <section>
+                <h2>South Indian Cuisine</h2>
 
-            <img src="south-indian.jpg" alt="South Indian Food">
+                <div>
+                    <img src="south-indian.jpg" alt="South Indian Food">
 
-            <p>
-                South Indian cuisine includes delicious dishes such as
-                dosa, idli, vada and sambar.
-            </p>
-        </section>
+                    <p>
+                        The cuisine of South India is known for its light,
+                        low-calorie preparations. Dosa, idli, vada and
+                        sambar are popular South Indian dishes.
+                    </p>
+                </div>
+            </section>
 
-    </main>
+        </main>
 
-    <footer>
-        <p>Created by Ayaan</p>
-        <p>2026</p>
-    </footer>
+        <aside>
+
+            <h2>Popular Foods</h2>
+
+            <div>
+                <h3>North Indian</h3>
+
+                <ul>
+                    <li>Chole Bhature</li>
+                    <li>Samosa</li>
+                    <li>Jalebi</li>
+                    <li>Dahi Bhalla</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>South Indian</h3>
+
+                <ul>
+                    <li>Dosa</li>
+                    <li>Idli</li>
+                    <li>Vada</li>
+                    <li>Sambar</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Mughlai</h3>
+
+                <ul>
+                    <li>Chicken Biryani</li>
+                    <li>Butter Chicken</li>
+                    <li>Rogan Josh</li>
+                </ul>
+            </div>
+
+        </aside>
+
+        <footer>
+            <p>Published by: Author Name</p>
+            <p>Date: 25/04/2021</p>
+        </footer>
+
+    </div>
 
 </body>
 
