@@ -9,10 +9,12 @@ html {
     color: #666;
     background-color: #b6f8ef;
 }
+
 .topnav {
     overflow: hidden;
     background-color: #333;
 }
+
 .topnav a {
     display: inline;
     color: #1affa3;
@@ -20,9 +22,11 @@ html {
     padding: 14px 16px;
     text-decoration: none;
 }
+
 .topnav a:hover {
     background-color: #111;
 }
+
 .pimg1,
 .pimg2,
 .pimg3 {
@@ -33,30 +37,37 @@ html {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
 .pimg1 {
     background-image: url('image1.jpg');
     min-height: 100%;
 }
+
 .pimg2 {
     background-image: url('image2.jpg');
     min-height: 400px;
 }
+
 .pimg3 {
     background-image: url('image3.jpg');
     min-height: 400px;
 }
+
 .section {
     text-align: center;
     padding: 50px 80px;
 }
+
 .section-light {
     background-color: #f4f4f4;
     color: #666;
 }
+
 .section-dark {
     background-color: #282e34;
     color: #ddd;
 }
+
 .ptext {
     position: absolute;
     top: 50%;
@@ -67,14 +78,17 @@ html {
     letter-spacing: 8px;
     text-transform: uppercase;
 }
+
 .ptext .border {
     background-color: #111;
     color: #fff;
     padding: 20px;
 }
+
 .ptext .border.trans {
     background-color: transparent;
 }
+
 @media(max-width:568px) {
 
     .pimg1,
