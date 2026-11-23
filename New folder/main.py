@@ -1,28 +1,11 @@
-lst = ['Apple', 'Guava', 'Mango', 'Banana', 'Kiwi']
+number = int(input("Enter Number to check"))
 
-print("length of list:", len(lst))
-print("First Element:", lst[0])
-print("Last Element:", lst[-1])
+print("Number to be checked :", number)
 
-lst.append ('Papaya')
-print("Updated List :", lst)
+if number%2==0 :
 
-lst.remove ('Guava')
-print("Updated List :", lst)
+print("This is an even number")
 
-lst.sort()
-print("Sorted List:", lst)
+else:
 
-lst.pop(1)
-print("Updated List :", lst,)
-
-lst.reverse()
-print("Reversed List:", lst,)
-
-print("Multiplication on list :" , lst*2)
-
-lst = lst[:4]
-print("Sliced list :" , lst)
-
-lst.clear()
-print("Updated List :", lst)
+print("This is an odd number")
